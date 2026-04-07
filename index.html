@@ -11,31 +11,43 @@
     <br />
     Regular Sign-up -
     <a href="https://promo.useorigin.com/sign-up/dtc/">
-      https://promo.useorigin.com/sign-up/dtc/ </a
-    ><br />
+      https://promo.useorigin.com/sign-up/dtc/
+    </a>
+    <br />
 
     <br />
 
-    
-    
     <b>Development</b><br />
     <a href="https://app-development.useorigin.com/sign-up/dtc/">
-      https://app-development.useorigin.com/sign-up/dtc/ </a
-    ><br />
-    
-   <br />
-  
-      <b>Localhost</b><br />
-    <a href="https://a506-191-205-140-55.ngrok-free.app/sign-up/dtc/">
-     https://a506-191-205-140-55.ngrok-free.app/sign-up/dtc/ </a
-    ><br />
-        <a href="https://a506-191-205-140-55.ngrok-free.app/onboarding">
-      https://a506-191-205-140-55.ngrok-free.app/onboarding </a
-    ><br />
-        <a href="x-safari-https://a506-191-205-140-55.ngrok-free.app/onboarding">
-      x-safari-https://a506-191-205-140-55.ngrok-free.app/onboarding </a
-    ><br />
+      https://app-development.useorigin.com/sign-up/dtc/
+    </a>
+    <br />
 
-    
-</body>
+    <br />
+
+    <b>Localhost</b><br />
+    <a id="ngrok-signup" href="#"></a><br />
+    <a id="ngrok-onboarding" href="#"></a><br />
+    <a id="ngrok-safari-onboarding" href="#"></a><br />
+
+    <script>
+      const NGROK_URL = "https://a506-191-205-140-55.ngrok-free.app";
+
+      const signUpUrl = `${NGROK_URL}/sign-up/dtc/`;
+      const onboardingUrl = `${NGROK_URL}/onboarding`;
+      const safariOnboardingUrl = `x-safari-${onboardingUrl}`;
+
+      const signUpLink = document.getElementById("ngrok-signup");
+      signUpLink.href = signUpUrl;
+      signUpLink.textContent = signUpUrl;
+
+      const onboardingLink = document.getElementById("ngrok-onboarding");
+      onboardingLink.href = onboardingUrl;
+      onboardingLink.textContent = onboardingUrl;
+
+      const safariLink = document.getElementById("ngrok-safari-onboarding");
+      safariLink.href = safariOnboardingUrl;
+      safariLink.textContent = safariOnboardingUrl;
+    </script>
+  </body>
 </html>
